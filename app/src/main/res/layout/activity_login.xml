@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/interview">
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#99000000"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_marginTop="105dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank"
+                    android:textSize="50sp"
+                    android:textColor="#ffa201"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/textView3">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ing"
+                    android:textSize="50sp"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/textView2">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo faucibus neque, vitae iaculis metus finibus id."
+                android:id="@+id/textView5" />
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:paddingLeft="30dp"
+                android:id="@+id/username"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/inputstyle"
+                android:inputType="textPersonName"
+                android:hint="Username" />
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:paddingLeft="30dp"
+                android:id="@+id/password"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/inputstyle"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tombollogin"
+                android:textColor="#ffa201"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:id="@+id/tombol"
+                android:onClick="goToActivity2"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
